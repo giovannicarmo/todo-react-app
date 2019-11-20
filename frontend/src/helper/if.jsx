@@ -1,7 +1,3 @@
-import React from 'react'
+import React from "react";
 
-export default props => {
-    if(props.test) {
-        return props.children
-    }
-};
+export default props => (props.test ? props.children : false);
