@@ -5,7 +5,7 @@ import "modules/bootstrap/dist/css/bootstrap.min.css";
 import "modules/font-awesome/css/font-awesome.min.css";
 import "../template/template.model.css"
 
-export default props => (
+export default () => (
   <div className="App">
     <Menu></Menu>
     <div className="container">
