@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = 'http://localhost:3003/api/todos';
+const URL = "http://localhost:3003/api/todos";
 
 export const changeDescription = e => ({
   type: "DESCRIPTION_CHANGED",
@@ -13,4 +13,12 @@ export const search = () => {
     type: "TODO_SEARCHED",
     payload: request
   };
+};
+
+export const add = description => {
+  const request = axios.post(URL, { description });
+  return {
+    type: "TODO_ADDED",
+    payload: request
+  }
 };
